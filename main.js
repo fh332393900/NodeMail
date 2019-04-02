@@ -8,28 +8,28 @@ const schedule = require("node-schedule"); //定时器任务库
 //配置项
 
 //纪念日
-let startDay = "2016/6/24";
+let startDay = "2017/11/24";
 //当地拼音,需要在下面的墨迹天气url确认
-const local = "zhejiang/hangzhou";
+const local = "sichuan/chengdu";
 
 //发送者邮箱厂家
-let EmianService = "126";
+let EmianService = "qq";
 //发送者邮箱账户SMTP授权码
 let EamilAuth = {
-  user: "xxx@126.com",
-  pass: "xxxx"
+  user: "332393900@qq.com",
+  pass: "odopfgydmuzabhcb"
 };
 //发送者昵称与邮箱地址
-let EmailFrom = '"vince" <xxxxx@126.com>';
+let EmailFrom = '"fenghang" <332393900@qq.com>';
 
 //接收者邮箱地
-let EmailTo = "xxxxx@qq.com";
+let EmailTo = "hang.feng@biz-united.com.cn";
 //邮件主题
-let EmailSubject = "一封暖暖的小邮件";
+let EmailSubject = "一封的小邮件";
 
 //每日发送时间
-let EmailHour = 5;
-let EmialMinminute= 20;
+let EmailHour = 15;
+let EmialMinminute= 44;
 
 // 爬取数据的url
 const OneUrl = "http://wufazhuce.com/";

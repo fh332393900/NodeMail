@@ -5,12 +5,13 @@ const ejs = require("ejs"); //ejs模版引擎
 const fs = require("fs"); //文件读写
 const path = require("path"); //路径配置
 const schedule = require("node-schedule"); //定时器任务库
+const tpl = require('light-tpl')
 //配置项
 
 //纪念日
 let startDay = "2017/11/24";
 //当地拼音,需要在下面的墨迹天气url确认
-const local = "sichuan/chengdu";
+const local = "shanghai/shanghai";
 
 //发送者邮箱厂家
 let EmianService = "qq";
@@ -25,10 +26,10 @@ let EmailFrom = '"fenghang" <332393900@qq.com>';
 //接收者邮箱地
 let EmailTo = "3251245977@qq.com";
 //邮件主题
-let EmailSubject = "一封的小邮件";
+let EmailSubject = "一封小邮件";
 
 //每日发送时间
-let EmailHour = 17;
+let EmailHour = 21;
 let EmialMinminute= 45;
 
 // 爬取数据的url
